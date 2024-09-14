@@ -1,12 +1,11 @@
 Package: bionovice
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Simplify Bioinformatics File Handling in R
+Version: 1.0.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Pankaj", "Ahluwalia", email = "pankaj4bt@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0060-6152"))
+Description: An R package that helps users identify bioinformatics file formats and recommends appropriate R packages or methods to open or analyze them. It automates the process of scanning folders, extracting file extensions, and providing guidance on handling various bioinformatics files, simplifying tasks for both new and experienced R users.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
