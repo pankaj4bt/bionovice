@@ -20,8 +20,7 @@ Install the package directly from GitHub using the `devtools` package:
 # Install devtools if not already installed
 install.packages("devtools")
 
-# Install the bionovice
- package from GitHub
+# Install the bionovice package from GitHub
 library(devtools)
 install_github("pankaj4bt/bionovice")
 
