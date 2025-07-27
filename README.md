@@ -36,9 +36,19 @@ install_github("pankaj4bt/bionovice")
 ```R
 library(bionovice)
 
-# Analyze all files in a folder
+# Basic analysis
 result <- analyze_folder("path/to/your/bioinformatics/files")
 print(result)
+
+# High-performance analysis with parallel processing
+result <- analyze_folder_parallel("path/to/folder", 
+                                  parallel = TRUE, 
+                                  include_metadata = TRUE,
+                                  recursive = TRUE)
+
+# Benchmark performance
+benchmark <- benchmark_analysis("path/to/test/folder")
+print(benchmark)
 ```
 
 ### Validate individual files
@@ -83,10 +93,22 @@ The package supports a wide range of bioinformatics file formats including:
 ## Functions
 
 - `analyze_folder()`: Main function to scan and analyze all files in a folder
+- `analyze_folder_parallel()`: High-performance version with parallel processing and advanced options
 - `scan_folder()`: Scan folder and extract file extensions
 - `recommend_packages()`: Get package recommendations for file types
 - `validate_file()`: Validate file format and structure
 - `extract_file_metadata()`: Extract detailed metadata from files
+- `benchmark_analysis()`: Benchmark performance of analysis operations
+
+## Performance Features
+
+The package includes several performance optimizations for handling large datasets:
+
+- **Parallel processing**: Use multiple CPU cores for faster analysis
+- **Recursive scanning**: Analyze entire directory trees
+- **File filtering**: Process only files matching specific patterns
+- **Metadata extraction**: Optional detailed analysis with format-specific statistics
+- **Benchmarking tools**: Compare performance of different analysis methods
 
 ## Contributing
 
