@@ -1,0 +1,33 @@
+url: https://pankaj4bt.github.io/bionovice/
+
+template:
+  bootstrap: 5
+
+reference:
+- title: Core Functions
+  desc: Main functions for analyzing bioinformatics files
+  contents:
+  - analyze_folder
+  - scan_folder
+  - recommend_packages
+
+- title: Advanced Analysis
+  desc: Enhanced functions with validation and metadata extraction
+  contents:
+  - validate_file
+  - extract_file_metadata
+  
+- title: Performance Tools
+  desc: High-performance analysis and benchmarking
+  contents:
+  - analyze_folder_parallel
+  - benchmark_analysis
+
+navbar:
+  structure:
+    left:  [intro, reference, articles, tutorials, news]
+    right: [search, github]
+  components:
+    github:
+      icon: fab fa-github fa-lg
+      href: https://github.com/pankaj4bt/bionovice
